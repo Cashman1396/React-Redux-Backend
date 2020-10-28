@@ -1,4 +1,4 @@
-class UserController < ApplicationController
+class UsersController < ApplicationController
     before_action :set_user, only: [:show, :update, :destroy]
     def index
         @users = User.all
@@ -18,7 +18,7 @@ class UserController < ApplicationController
             session[:user_id] = @user_id
             render json: UserSerializer.new(@user).serialized_json, status: :created
         else 
-            resp = { @user.errors.full_message.to_sentence }
+            resp = { error: @user.errors.full_messages.to_sentence }
             render json: resp, status: :unprocessable_entity
         end 
     end 

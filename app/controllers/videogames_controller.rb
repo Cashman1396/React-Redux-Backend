@@ -29,7 +29,7 @@ class VideogamesController < ApplicationController
     end
     
     def update
-        if @videogame(videogame_params)
+        if @videogame.update(videogame_params)
             render json: VideogameSerializer.new(@videogame), status: :ok
         else 
             render json: {
