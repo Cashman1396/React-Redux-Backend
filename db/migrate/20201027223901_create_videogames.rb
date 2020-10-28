@@ -6,6 +6,7 @@ class CreateVideogames < ActiveRecord::Migration[6.0]
       t.string :game_rating
       t.string :game_platform
       t.text :description
+      t.string :image_url
       t.integer :year_released
       t.integer :user_id
     end
