@@ -1,2 +1,4 @@
 class UserVideogame < ApplicationRecord
+    belongs_to :user
+    belongs_to :videogame
 end
