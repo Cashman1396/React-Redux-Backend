@@ -4,12 +4,12 @@ class VideogamesController < ApplicationController
     def index
         if logged_in?
             @videogames = current_user.videogames
-
-            render json: VideogameSerializer.new(@video)
-        else 
-            render json: {error: "You need to be logged in to view the games list"}
+            render json: VideogameSerializer.new(@videogames)
+        else
+            render json: {
+                error: "Please Try Again"
+            }
         end 
-
     end 
 
     def show
