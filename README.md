@@ -1,3 +1,7 @@
+# Oracle Game Library - Backend Edition
+
+Click [here](https://github.com/Cashman1396/React-Redux-Final-Project) for Frontend
+
 # README
 
 This README would normally document whatever steps are necessary to get the

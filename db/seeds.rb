@@ -23,4 +23,5 @@ test_game = test.videogames.create(
     game_platform: "Nintendo Switch",
     year_released: 2019,
     description: "Pokémon Sword[a] and Pokémon Shield[b] are 2019 role-playing video games developed by Game Freak and published by The Pokémon Company and Nintendo for the Nintendo Switch.",
-    image_url: "https://projectpokemon.org/home/uploads/monthly_2019_06/large.swordnshield.png.051ae8b21788af441c7493b55ff8ad85.png")
+    image_url: "https://projectpokemon.org/home/uploads/monthly_2019_06/large.swordnshield.png.051ae8b21788af441c7493b55ff8ad85.png"
+    )
